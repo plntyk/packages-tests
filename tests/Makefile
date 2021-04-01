@@ -33,6 +33,7 @@ PROG_1:=cpp_intl.cpp
 FILES_LIST:=$(PROG_1)
 
 TARGET_CPPFLAGS +=-Wall -Werror -Wpedantic
+TARGET_LDFLAGS += -lintl
 
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
